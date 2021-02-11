@@ -55,7 +55,7 @@ export class DataService {
  
     }
     getAbout() {
-        return "I am a Software Developer with a strong passion for improvement, and good problem solving skills, strong hold on data-structures and algorithms and always ready to learn. ";
+        return "I am a Software Developer with a strong hold on data-structures and algorithms.";
     }
     getExperiences() {
         return [
@@ -74,7 +74,7 @@ export class DataService {
               "companyName" :"GetBasis Technologies, Bengaluru, India",
               "year" : "January 2020 - August 2020",
               "jobTitle" : "Android Developer Intern",
-              "description" : ["* Added several features on Basis Android App to increase user engagement","* Added analytics on all the existing features to extract meaningful data from user activity.","* Quality analyzed Basis Android App and Web App to make sure they are bug and defect free.","* Technologies used:- MvRx Architecture by Airbnb (MVVM), Koin, Retrofit, Epoxy, Firebase, Kotlin"],
+              "description" : ["* Added Groups Feature on community of Basis Android App.", "* Added Community Polls feature.", "* Added feature to add tags on Community Posts.", "* Added Retirement and Career-Break calculators", "* Added functionality to like Stories and Comments on Community Posts", "* Added analytics on all the existing features to extract meaningful data from user activity.","* Quality analyzed Basis Android App and Web App.","* Technologies used:- MvRx Architecture by Airbnb (MVVM), Koin, Retrofit, Epoxy, Firebase, Kotlin"],
               "companyWebsite" : "https://www.getbasis.co"
           },
           {
@@ -95,10 +95,10 @@ export class DataService {
             {
               "id":1,
               "isActive":true,
-              "collegeName" :"SGGSIE&T, Nanded",
+              "collegeName" :"Shri Guru Gobind Singhji Institute of Engineering and Technlogy, Nanded",
             "year" : "August 2016 - October 2020",
             "courseName" : "B.Tech in Information Technology",
-            "description" : "A government aided autonomous institute, where I learnt basics and fundamentals of Software Engineering.",
+            "description" : "A government aided autonomous institute.",
             "grade": "7.86 CPGA"
           }
         ];
@@ -117,9 +117,36 @@ export class DataService {
 
     getProjects() {
       return [
+        {
+          "id":1,
+          "isActive":true,
+          "hasLiveDemo": true,
+          "link": "https://kushagrak123.github.io/Pathfinding-Visualizer/",
+          "showDetails": false,
+          "title" :"Pathfinding Visualizer",
+        "technologiesUsed" : ["Angular", "HTML", "CSS", "Typescript"],
+        "titleImage":"/assets/projects/pathfinding/title.png",
+        "screenshots" : [],
+        "description" : "This website lets us visualise some famous pathfinding algorithms and lets us understand the algorithm better."
+        },
+        {
+          "id":2,
+          "isActive":true,
+          "hasLiveDemo": true,
+          "link": "https://gerrit.libreoffice.org/69394",
+          "showDetails": false,
+          "title" :"Open Source contribution in LibreOffice",
+        "technologiesUsed" : ["Java"],
+        "titleImage":"/assets/projects/libreoffice/title.png",
+        "screenshots" : [],
+        "description" : "LibreOffice is a free open-source office productivity software suite, I made a contribution to it by fixing a bug in it."
+      }, 
           {
-            "id":1,
+            "id":3,
             "isActive":true,
+            "hasLiveDemo": false,
+            "link": "",
+            "showDetails": true,
             "title" :"Reminder Android Application",
           "technologiesUsed" : ["Android Studio", "Java", "SQLLite Database"],
           "titleImage":"/assets/projects/reminder/title.png",
@@ -127,19 +154,25 @@ export class DataService {
           "description" : "It is a very easy to use Reminder app, which will never let you miss a event."
         }, 
         {
-          "id":2,
+          "id":4,
           "isActive":true,
           "title" :"Bouncy Ball Android Game",
+          "hasLiveDemo": true,
+          "link": "https://play.google.com/store/apps/details?id=com.empyrealgames.BouncyBall&hl=en_IN&gl=US",
+          "showDetails": false,
         "technologiesUsed" : ["Unity3D Studio", "C#"],
         "titleImage":"/assets/projects/bouncyball/title.png",
         "screenshots" : ["/assets/projects/bouncyball/ss1.jpg","/assets/projects/bouncyball/ss2.jpg","/assets/projects/bouncyball/ss3.jpg","/assets/projects/bouncyball/ss4.jpg"],
         "description" : "An endless arcade game where players need to drag their finger on the screen and jump on the tiles to bounce around in space and make sure you don't fall off the edge."
       }, 
         {
-        "id":3,
+        "id":5,
         "isActive":true,
         "title" :"Currency Convertor Android Application",
       "technologiesUsed" : ["Android Studio", "Java"],
+      "hasLiveDemo": true,
+      "link": "https://play.google.com/store/apps/details?id=com.empyrealgames.currencyconvertor&hl=en_IN&gl=US",
+      "showDetails": false,
       "titleImage":"/assets/projects/currencyconvertor/title.png",
       "screenshots" : ["/assets/projects/currencyconvertor/ss1.jpg","/assets/projects/currencyconvertor/ss2.jpg"],
       "description" : "Convert any currency with live exchange rates. Supports currencies for every country including the dollar, rupee, euro, pound, yen, yuan, won, franc, ruble, dinar, peso, rupee, shilling, rial, kwacha, dirham, florin, guinea, krona, krone, riyal, colon, som, leu, virtual currencies like Bitcoin, plus precious metals like gold, silver."

@@ -6,4 +6,7 @@ export class Project {
     titleImage:string;
     screenshots: Array<string>;
     description: string;
+    hasLiveDemo: boolean;
+    link: string;
+    showDetails: boolean;
   }

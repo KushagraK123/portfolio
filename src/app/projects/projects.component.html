@@ -6,7 +6,7 @@
         <ng-container *ngFor="let project of projects">
           <div class="project shadow-large" *ngIf="project.isActive">
               <div routerLink="project-detail" routerLinkActive="active" class="project-image">
-                  <img style="width: 200px;" src="{{project.titleImage}}" />
+                  <img style="width: 200px; height: 200px;" src="{{project.titleImage}}" />
               </div>
               <!-- End .project-image -->
               <div class="project-info">
@@ -15,7 +15,9 @@
                       {{project.description}}
                   </p>
 
-                <p style="text-align: left;" >  <a [routerLink]="['project-detail', project.id]" routerLinkActive="active">Full Project Details</a> </p>
+                <p style="text-align: left;" *ngIf="project.showDetails">  <a [routerLink]="['project-detail', project.id]" routerLinkActive="active">Full Project Details</a> </p>
+                <p style="text-align: left;" *ngIf="project.hasLiveDemo">  <a href="{{project.link}}" target="blank">View</a> </p>
+
               </div>
               <!-- End .project-info -->
           </div>
